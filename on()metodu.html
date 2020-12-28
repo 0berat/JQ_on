@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+$(document).ready(function (){
+    // $(".silBtn").click(function () {
+    //     $(".container").remove();
+    // });
+            $("body").on("click",".silBtn", function(){
+                     $(".container").remove();
+        
+            });
+    $("button").click(function () {
+        $("hr").after("<br> <a href ='#' class ='silBtn'>Eklenen sil</a>");
+
+    });
+    
+    
+    });
+
+
+
+    </script>
+
+
+</head>
+<body>
+<button>sil butonu ekle</button>
+
+<br>
+
+<div class="container">Bu bir test elementidir on metodu nasıl çalışır
+</div>
+<a href="#" class="silBtn">sil</a>
+<hr>
+</body>
+</html>
